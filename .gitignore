@@ -22,6 +22,7 @@ Session.vim
 *.bak
 *.swp
 *.save
+*.tpl~
 
 # KDE directory preferences
 .directory
