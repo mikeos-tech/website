@@ -39,29 +39,11 @@
   background: green;
 }
 
-.iconImage {
-    padding-top: 8px;
-    width: 100px;
-    height: 100px;
-    text-align: center;
-}
-
-.indexmenu {
-  position: absolute;
-  top: 300px;
-  width: 140px;
-  height: 600px;
-  border: 3px solid #f46f1a;
-  font-size: 16px; 
-  text-align: center;
-  color: #f46f1a;
-}
-
 .indexbody {
   position: absolute;
   top: 300px;
-  left: 150px;
-  width: 1740px;
+  left: 20px;
+  width: 1870px;
   height: 600px;
   border: 3px solid #f46f1a;
 }
@@ -69,20 +51,6 @@
 
 
 </style>
-
-
-<div class="indexmenu" >
-	<a href="update.php" >
-	<img class="iconImage" src="images/update.png" title="OS Updates"></a>
-	<br>OS Updates
-        <a href="shutdown.php" >
-        <img class="iconImage" src="images/shutdown.png" title="OS Updates"></a>
-        <br>Shutdown
-        <a href="restart.php" >
-        <img class="iconImage" src="images/restart.png" title="OS Updates"></a>
-        <br>Restart
-</div>
-
 	<div class="indexbody"> 
 		<table>
 		<tr><td class="question" >The date is:     </td><td class="answer" >{$today_date}</td></tr>
