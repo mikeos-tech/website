@@ -1,0 +1,214 @@
+@media screen {
+    body {
+	background-color: #D5D5D5; // PAPER
+	margin: 0;
+	font-family: arial, sans-serif;
+    }
+    
+    h1 {
+	color: white;
+	text-align: center;
+	font-family: arial, sans-serif;
+    }
+
+    h2 {
+	font-family: arial, sans-serif;
+	color: #6D7993;
+    }
+
+    h3 {
+	font-family: arial, sans-serif;
+	color: #96858F;
+    }
+
+    h4 {
+	font-family: arial, sans-serif;
+	color: #968846;
+    }
+
+    a {
+	text-decoration: none;
+    }
+
+    th, td {
+	padding: 10px;
+	text-align: left;
+    }
+
+    tr:nth-child(odd) {
+	background-color: lightcyan
+    }
+
+    #track {
+	color: navy;
+	display: inline;
+    }
+
+    #artist {
+	color: #00bfff;
+	display: inline;
+    }
+
+    #album {
+	color: blue;
+    display: inline;
+    }
+
+    #menu {
+	margin: 14px auto;
+	width: 575px;
+	height: 20%
+	box-shadow: 2px 2px 4px #888888;
+	padding: 10px 6px;
+	border: 1px solid #6D7993;
+	color: #6D7993;
+    }
+
+    #menu_item {
+	display: inline;
+	color: #6D7993;
+	padding: 6px 6px;
+	width: 160px;
+	text-decoration: none;
+	text-align: center;
+	border: 1px solid #6D7993;
+	margin: 0 auto;
+    }
+
+    li a:hover {
+	background-color: #555;
+	color: white;
+    }
+
+    #help_table {
+	border: 2px solid black;
+	margin: 0 auto;
+    }
+
+    #help_table_item {
+	   border-bottom: 1px solid black;
+    }
+
+    #side_menu {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	width: 6%;
+	position: fixed;
+	height: 100%;
+	overflow: auto;
+	background-color: #6D7993 // LAVENDAR
+    }
+    
+    #for_side_menu {
+	margin-left:	10%;
+	paddng:		1px 16px;
+	height:		1000px;
+    }
+
+    #side_menu_item {
+	display: block;
+	padding: 6px 14px;
+	text-decoration: none;
+    }
+
+    #side_menu_item a.active {
+	background-color: #4CAF50;
+	color: white;
+    }
+
+    #side_menu_item a:hover:not(.active) {
+	background-color: #555;
+	color: white;
+    }
+    
+    #menu_text {
+	color: #6D7993;
+	text-shadow: 	2px 2px 4px  #888888;
+	display: inline;
+	font-weight: bold;
+    }
+}
+
+@media print
+{
+    #artist {
+	display: inline;
+	color: black;
+    }
+
+    #album {
+        display: inline;
+        color: black;
+     }
+    
+    #track {
+	display: inline;
+	color: black;
+    }
+
+    a {
+	text-decoration: none;
+	color: #000;
+    }
+
+    h1 {
+	text-align: center;
+	font-size: 12pt;
+    }
+
+    th, td {
+	padding: 4px;
+	text-align: left;
+	height: 6px;
+    }
+    
+    tr {
+	line-height: 6px;
+    }
+
+    header nav, footer {
+	display: none;
+    }
+
+    @page {
+	margin-left: 0.5cm;
+        margin-right: 0.5cm;
+	margin-top: 1.5cm;
+        margin-bottom: 2cm;
+    }
+
+    body {
+	font-family: arial, sans-serif;
+        font-size: 7pt;
+	margin: 0;
+	color: black;
+	line-height	50%;
+    }
+
+    .no-print, .no-print *
+    {
+	display: none !important;
+        height: 0;
+        width: 0; 
+    }
+
+    div {
+	page-break-inside: avoid;
+    }
+
+    #help_table {
+	border: 2px solid black;
+	margin: 0 auto;
+    }
+
+    #help_table_item {
+	   border: 1px solid black;
+    }    
+    
+    #for_side_menu {
+	margin-left: 	0;
+	padding:     	0px;
+	height: 	0px;
+    }
+}

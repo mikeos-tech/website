@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+const queryString = window.location.search;
+const urlParams = new URLSearchParams(queryString);
+const key = urlParams.get('name');
+const type = key.endsWith(".mp4");
+const action = urlParams.get('action');
+var r = false;
+
+if (action == 1) { // Watched
+    if (type == true) {
+	r = confirm("Do you wish to record the program as Watched:\n " + key);
+    } else {
+        r = confirm("Do you wish to record the program as Listened to:\n " + key);
+    }
+} else { // Archived
+	r = confirm("Do you wish to record the pogram as archived:\n " + key);
+}
+if (r == true) {  // Carry out action
+    if (action == 1) { // Mark it as watched or listened to.
+        window.location.assign("http://192.168.2.9/watched.php?name=" + key);
+    } else { // Mark it as Archived
+        window.location.assign("http://192.168.2.9/archive.php?name=" + key);
+    }
+} else { // You don't want to change anything so load the page the choice was from
+    if (type == true) {
+       window.location.assign("http://192.168.2.9/tv_progs.php");
+    } else {
+       window.location.assign("http://192.168.2.9/radio_progs.php");
+    }
+} 
+</script>
+</body>
+</html>
+
