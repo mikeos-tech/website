@@ -1,6 +1,3 @@
-<html lang="en">
-<head>
-<link rel=“shortcut icon” href=“"http://192.168.2.217/favicon.ico” />
 <link rel="stylesheet" type="text/css" href="css/style.css" />
 <title>Mad Mike&#39;s Music Machine...</title>
 </head>
@@ -21,7 +18,9 @@
 <a href="http://192.168.2.9:9091" class="button" target="_blank" >Transmissions Client</a>
 <a href="http://192.168.2.9/MAL_start.php" class="button" >Media/Artist List</a>
 <a href="http://192.168.2.9/environment.php" class="button" >Environment</a> 
-<a href="http://192.168.2.9/MAL_start.php" class="button" >Media Backup</a>
+{if not $backup}
+	<a href="http://192.168.2.9/backup.php" class="button" >Media Backup</a>
+{/if}
 {if not $tv_progs}
 	<a href="http://192.168.2.9/tv_progs.php" class="button" >TV Program Downloads</a>
 {/if}
